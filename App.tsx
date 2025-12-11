@@ -7,6 +7,8 @@ import ParkingStatus from './pages/ParkingStatus';
 import ZoneInspection from './pages/ZoneInspection';
 import PersonnelMovement from './pages/PersonnelMovement';
 import ThermalComfort from './pages/ThermalComfort';
+import Analytics from './pages/Analytics';
+import CCTV from './pages/CCTV';
 
 const App: React.FC = () => {
   return (
@@ -19,6 +21,8 @@ const App: React.FC = () => {
           <Route path="zones" element={<ZoneInspection />} />
           <Route path="personnel" element={<PersonnelMovement />} />
           <Route path="thermal" element={<ThermalComfort />} />
+          <Route path="analytics" element={<Analytics />} />
+          <Route path="cctv" element={<CCTV />} />
         </Route>
       </Routes>
     </BrowserRouter>
